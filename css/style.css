@@ -80,7 +80,7 @@ button:focus, button:hover{
 }
 
 .div-team{
-    padding: 32px 0;
+    padding: 32px 16px;
 }
 
 .team-list-heading{
@@ -98,10 +98,25 @@ button:focus, button:hover{
     font-size: 16px;
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 8px; 
+}
+
+.icon-team-container{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.icon-team-container .icon{
+    width: 40px;
+    height: 40px;
 }
 
 .hero{
-    background-color: #2E2F42;
+    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/people-office.jpg);
+    background-size: cover;
+    background-position: center;
     margin-top: 0 auto;
     padding: 188px 0;
     align-items: center;
@@ -273,6 +288,7 @@ a{
     font-weight: 500;
     line-height: 1.2;
     margin-bottom: 8px;
+    margin-top: 0;
 
 }
 
@@ -281,6 +297,7 @@ a{
 }
 
 .footer{
+    display: flex;
     background-color: #2e2f42;
     padding: 100px 0;
 
@@ -313,6 +330,39 @@ a{
     column-gap: 24px;
     row-gap: 48px;
     max-width: 100%;
+}
+
+.portfolio-image{
+    position: relative;
+    overflow: hidden;
+    width: 360px;
+    height: 300px;
+}
+
+.overlay{
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
+
+    padding: 32px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 400;
+
+    transform: translateY(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.portfolio-image:hover .overlay{
+    transform: translateY(0);
+    cursor: pointer;
 }
 
 .portfolio-list-item{
@@ -385,4 +435,32 @@ img{
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.icon{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    stroke: #000;
+    background-color: #F4F4FD;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    width: 264px;
+    height: 112px;
+}
+
+.icon-container .icon{
+    width: 64px;
+    height: 64px;
 }

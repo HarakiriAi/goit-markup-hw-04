@@ -513,11 +513,6 @@ img{
     padding: 0 15px;
 }
 
-.icon{
-    width: 24px;
-    height: 24px;
-}
-
 .icon-container{
     display: flex;
     justify-content: center;
@@ -529,9 +524,4 @@ img{
     margin-bottom: 8px;
     width: 264px;
     height: 112px;
-}
-
-.icon-container > svg{
-    width: 64px;
-    height: 64px;
 }
